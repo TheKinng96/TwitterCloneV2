@@ -1,0 +1,28 @@
+TWITTER CLONE SOFTWARE REQUIREMENTS
+
+GOALS
+  Create a twitter clone to let users search for tweets and view them
+
+USER STORIES
+  As a <User> I want <Goal> so that <some reason>
+  TASK: Complete User story or trending hashtags and next page functionality
+    As a user, I want to be able to iniput my search so that I can search for Tweets
+    As a user, I want to be able to see thet tweets I searched for so that I can view them
+    As a user, I want to be able to view the text, photo, video, gifs, of the tweet so that I can view all of the contents of the tweet
+    
+
+FLOW DIAGRAM(SWIMLANE)
+  Shows who does what in the process
+  TASK: Complete Swimlane for next page click
+
+BUSINESS REQUIREMENTS
+  TASK: Complete Business Requiremnets for Home page
+
+TECHNICAL REQUIREMENTS
+  Create a Developer Account for TWITTER
+  Make sure to only show the next page link when there are no more results for next page
+    Use the attribute "next_results"
+  Use moment.js for showing the date of the tweet from the current data
+  Use the documentation for getting Search Tweets
+  API endpoints
+    TASK: Complete documentation for using the twitter API after learning about the Twitter API
