@@ -1,0 +1,3 @@
+curl -u 'iVtonIacLh5MlXtJ2iWtvoFv8:kIjRmfPEOCPPXB4As5ALquaiPjGO6UoWVtdDJmlQawRpGuVPmB' \
+  --data 'grant_type=client_credentials' \
+  'https://api.twitter.com/oauth2/token'
