@@ -100,6 +100,33 @@ body {
 .tweets-list {
     height: 700px;
     margin: 0 20px 20px 20px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.tweets-list::-webkit-scrollbar {
+    display: none;
+  }
+
+.next-page-container {
+    margin: 0 20px 20px 20px;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in;
+    visibility: hidden;
+}
+
+.next-page-container:hover {
+    color: black;
+    border: 2px solid black;
+    background: whitesmoke;
 }
 
 .tweets-sidebar-container {
@@ -120,7 +147,7 @@ body {
 }
 
 .tweets-trending {
-    height: 300px;
+    height: 350px;
     background: #dbdbdb;
     border-radius: 30px;
     margin: 10px;
@@ -147,4 +174,22 @@ body {
     color: #8d8d8d;
     border-top: 1px solid #8b8b8b;
     cursor: pointer;
+    font-weight: bold;
+}
+
+.welcome {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome h5 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.welcome p {
+    font-size: 30px;
 }
