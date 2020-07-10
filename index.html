@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="style/tweet.css">
         <script src="https://kit.fontawesome.com/c939d0e917.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js" integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg==" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="container home-page">
@@ -29,7 +30,7 @@
             </div>
             <div class="main">
                 <div class="tweets-search-container">
-                    <input id="user-search-input" type="text" placeholder="Search Tweet" />
+                    <input id="user-search-input" onkeyup="passByEnter(event)" type="text" placeholder="Search Tweet" onClick="getTwitterData()" />
                     <i class="fas fa-search fa-flip-horizontal"></i>
                 </div>
                 <div class="tweets-list">
@@ -65,9 +66,9 @@
                     <div class="tweets-trending">
                         <h4>Trends for you</h4>
                         <ul>
-                            <li>#Coding</li>
-                            <li>#JavaScript</li>
-                            <li>#Python</li>
+                            <li onclick="selectTrend(this)">#Coding</li>
+                            <li onclick="selectTrend(this)">#JavaScript</li>
+                            <li onclick="selectTrend(this)">#Python</li>
                         </ul>
                     </div>
                 </div>

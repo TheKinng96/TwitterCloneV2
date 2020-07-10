@@ -99,7 +99,7 @@ body {
 
 .tweets-list {
     height: 700px;
-    margin: 20px;
+    margin: 0 20px 20px 20px;
 }
 
 .tweets-sidebar-container {
